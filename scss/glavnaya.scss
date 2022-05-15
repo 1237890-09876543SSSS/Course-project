@@ -1,0 +1,71 @@
+@import "peremenye";
+.fon{
+    margin: 30px auto 30px auto;
+    @media (max-width: 1240px ){
+        margin: auto;
+    }
+    max-width: $max-width;
+    padding: $conten-padding;
+    height: 600px;
+    background: url(../img/gl-fon.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; // нужен чтоб разместить заголовок вертикально 
+    ///////////////// по центру используя align-items
+    align-items: center;
+    h1{
+        font-size: $text4 + 20px;
+        @media (max-width: 900px ){
+            font-size: $text4 + 10px;
+            max-width: 700px;
+        }
+        color: white;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+        span{
+            font-size: $text2;
+        }
+    }
+}
+section{
+    text-align: center;
+    h1{
+        padding: 30px;
+        font-size: $text4 + 10px;
+        font-weight: normal;
+        @media (max-width: 1000px) {
+            font-size: $text4;
+        }
+        @media (max-width: 600px) {
+            font-size: $text4 - 5px;
+        }
+    }
+    .container-razdelov{
+        max-width: $max-width;
+        padding: $conten-padding;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .razdel{
+            width: 500px;
+            img{
+                width: 90%;
+                margin: auto;
+            }
+            p{
+                padding: 20px;
+                font-size: $text3;
+                @media (max-width: 360px) {
+                    font-size: $text2;
+                }
+            }
+            hr{
+                margin: auto;
+                width: 90%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

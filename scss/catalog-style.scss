@@ -1,0 +1,134 @@
+@import "peremenye";
+article{
+    width: 100%;
+    h1{
+        font-weight: normal;
+        text-align: center;
+        padding-top: 30px;
+        font-size: $text4;
+        @media(max-width: 531px){
+            font-size: 25px;
+        }
+        @media(max-width: 360px){
+            font-size: 20px;
+        }
+    }
+    .moneti{
+        // стили групп карточек монет
+        margin: auto;
+        max-width: $max-width;
+        padding: $conten-padding;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+        .moneta{
+            // стили всех карточек
+            margin: 30px 5px 0 5px;
+            width: 250px;
+            height: 400px;
+            background-color: rgb(198, 198, 198);
+            border-radius: 5px;
+            text-align: center;
+            p{
+                padding: 5px;
+                font-size: $text1;
+            }
+            a{
+                display: block;
+                padding: 10px;
+                margin: auto;
+                margin-top: 10px;
+                background-color: rgb(145, 145, 145);
+                width: 100px;
+                border-radius: 5px;
+            }
+            img{
+                display: block;
+                margin: auto;
+                margin-top: 20px;
+                width: 210px;
+            }
+        }
+    }
+
+
+
+}
+.group-type{
+    // стили разделающих заголовков для описания монет
+    margin-top: 30px;
+    padding: $conten-padding;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    h1{
+        font-weight: normal;
+        margin: auto;
+        padding: 30px 0 30px 0;
+    }
+}
+section{
+    // стили описания монет
+    margin: auto;
+    max-width: $max-width;
+    padding: $conten-padding;
+  
+    .div-img{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        img{
+            min-width: 250px;
+            width: 400px;
+        }
+        @media(max-width: 650px){
+            flex-wrap: wrap;
+            padding: 20px;
+            img{
+                width: 350px;
+            }
+        }
+        @media(max-width: 430px){
+            padding: 20px 0 20px 0;
+        }
+    }
+    .text{
+        margin: auto;
+        max-width: 400px;
+       
+        p{
+            font-size: $text4;
+            @media(max-width: 500px){
+                font-size: $text2;
+            }
+            @media(max-width: 400px){
+                font-size: $text2 - 3px;
+            }
+        }
+        h2{
+            text-align: center;
+            font-size: $text4;
+            @media(max-width: 500px){
+                font-size: $text2;
+            }
+            @media(max-width: 400px){
+                font-size: $text2 - 3px;
+            }
+        }
+        .div-a{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            a{
+                display: block;
+                font-size: $text2;
+                @media(max-width: 400px){
+                    font-size: $text2 - 3px;
+                }
+                padding: 15px 20px 15px 20px;
+                margin: 10px 0 10px 0;
+                background-color: rgb(198, 198, 198);
+                border-radius: 5px;
+            }
+        }
+    }
+}

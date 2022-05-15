@@ -1,0 +1,106 @@
+@import "peremenye";
+
+section{
+    // фон страницы
+    background: -webkit-linear-gradient(45deg, rgb(234, 214, 230) 12%, rgb(240, 251, 216) 88%);
+    background: -moz-linear-gradient(45deg, rgb(234, 214, 230) 12%, rgb(240, 251, 216) 88%);
+    background: linear-gradient(45deg, rgb(234, 214, 230) 12%, rgb(240, 251, 216) 88%);
+    padding: 20px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        //тень
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        padding: 30px;
+        @media(max-width:1400px){
+            padding: 20px;
+        }
+        border-radius: 8px;
+        max-width: $max-width;
+        background: white;
+        h1{
+            
+            font-size: $text4;
+            @media(max-width:390px){
+                font-size: $text4 - 6px;
+            }
+            color: rgb(56, 51, 198);
+            padding: 10px 0;
+        }
+        p{
+            font-size: $text1;
+            padding: 10px 0;
+            @media(max-width:1400px){
+                padding: 5px 0;
+            }
+        }
+        .input-box{
+            padding: 10px 0;
+            @media(max-width:1400px){
+                padding: 5px 0;
+            }
+            input, textarea{
+                border-radius: 5px;
+                font-size: $text1 - 5px;
+                height: 40px;
+                border: none;
+                background: #f0f1f8;
+                width: 100%;
+                box-sizing: border-box; // width и height включают в себя 
+                // значения полей и границ, без этого, поля для ввода выходят за  
+                // границы формы потому что paddig добавляют ширину к уже имеющимся 100%
+                padding: 0 20px;
+                @media(max-width:360px){
+                    text-align: center;
+                    padding: 0 5px;
+                }
+                @media(max-width:320px){
+                    font-size: $text1 - 7px;
+                }
+                &:hover{
+                    padding: 15px 25px;
+                    height: 50px;
+                    transition-duration: .2s;
+                }
+            }
+            textarea{
+                padding: 20px;
+                resize: none;
+                height: 60px;
+            }
+            input[type="button"]{
+                width: auto; // обнуляем ширину заданнуюдля всех инпутов
+                padding: 10px 20px;
+                color: white;
+                background: rgb(56, 51, 198);
+                &:hover{
+                    padding: 15px 25px;
+                    background: rgb(75, 71, 201);
+
+                    // тень
+                    -webkit-box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+                    -moz-box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+                    box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+
+                }
+                &:active{
+                    background: rgb(58, 55, 153);
+                    padding: 14px 24px;
+                    height: 48px;
+                    transition-duration: 1ms;
+                    //inset отображает тень внутри 
+                    //блока что указывает на впуклость при нажатии
+                    -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+                    -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+                    box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+
+                }
+            }
+        }
+        
+    }
+}

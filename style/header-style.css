@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(45deg, #d4d4d4 22%, #fbfbfb 79%);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: fixed;
+  background-color: #adadad;
+  width: 100%;
+}
+
+@media (max-width: 697px) {
+  header {
+    position: static;
+  }
+}
+
+header .first-header {
+  background-color: #7070ce;
+  width: 100%;
+}
+
+header .first-header div {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  padding: 0 20px 0 20px;
+}
+
+@media (max-width: 300px) {
+  header .first-header div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+header .first-header div a {
+  font-size: 20px;
+  color: antiquewhite;
+  margin: 5px 0 5px 0;
+}
+
+header .first-header div a img {
+  width: 50px;
+}
+
+header .first-header div a:hover {
+  color: #c8c8c8;
+}
+
+header .second-header {
+  padding: 0 20px 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .second-header ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 900px;
+}
+
+header .second-header ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+header .second-header ul li a {
+  color: black;
+  font-size: 25px;
+}
+
+@media (max-width: 423px) {
+  header .second-header ul li a {
+    font-size: 20px;
+  }
+}
+
+header .second-header ul li a:hover {
+  color: #656060;
+}
+
+.otstup-header {
+  height: 113px;
+}
+
+@media (max-width: 697px) {
+  .otstup-header {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #43437e;
+}
+
+footer div {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div p {
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  display: block;
+  color: antiquewhite;
+}
+
+@media (max-width: 633px) {
+  footer div p {
+    font-size: 17px;
+  }
+}
+
+footer div .footer-div2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer div .footer-div2 a {
+  padding-left: 20px;
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+@media (max-width: 633px) {
+  footer div .footer-div2 a {
+    font-size: 17px;
+  }
+}
+
+footer div .footer-div2 a:hover {
+  color: #c8c8c8;
+}
+
+footer div .footer-div2 img {
+  padding: 10px 0 10px 0;
+  width: 70px;
+}
+
+@media (max-width: 500px) {
+  footer div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
+  footer div .footer-div2 a {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=header-style.css.map */

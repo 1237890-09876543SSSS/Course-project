@@ -1,0 +1,64 @@
+@import "peremenye";
+article{
+    .content{
+        margin: auto;
+        max-width: $max-width;
+        padding: $conten-padding;
+        border: 1px solid black;
+        h1{
+            padding: 40px;
+            width: 170px;
+            display: block;
+            margin: auto;
+            font-weight: normal;
+            font-size: $text4;
+        }
+        p{
+            font-size: $text3;
+            a{
+                color: blue;
+                text-decoration: underline;
+            }
+        }
+        .button{
+            width: 200px;
+            margin: 30px 0 30px;
+            padding: 20px;
+            display: block;
+            background: rgb(56, 51, 198);
+            color: antiquewhite;
+            &:hover{
+                padding: 21px;
+                color: rgb(200, 200, 200);
+                background: rgb(75, 71, 201);
+                // тень
+                -webkit-box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+                -moz-box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+                box-shadow: -7px 7px 5px -5px rgba(34, 60, 80, 0.6);
+            }
+            &:active{
+                padding: 19px;
+                background: rgb(48, 45, 150);
+                transition-duration: .005s;
+                //inset отображает тень внутри 
+                //блока что указывает на впуклость при нажатии
+                -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+                -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+                box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+            }
+            text-align: center;
+            border-radius: 10px;
+            font-size: $text2;
+        }
+        @media (max-width:1000px) {
+            h1{
+                padding: 30px;
+                font-size: $text4 - 5px;
+            }
+            p{
+                font-size: $text3 - 5px;
+            }
+        }
+        
+    }
+}
